@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #414141;
+    --secondary-color: #000000;
+    --text-color: #5E5B5B;
+    --accent-color: #C4C4C4;
+    --lightText-color: #9F9F9F;
+    --font-family-poppin: 'Poppins', sans-serif;
+    --flex-1:flex:1;
+}
+h1{
+    font: 600 3rem var(--font-family-poppin);
+    color:var(--primary-color);
+    line-height: 3.5rem;
+    
+}
+h2{
+    font: 600 1.5rem var(--font-family-poppin);
+    color:var(--primary-color);
+    
+}
+h3{ 
+
+    font-size: 1.2rem ;
+    
+
+}
+h4{
+    font-size: 1rem;
+    color:var(--text-color);
+}
+h5{
+    font-size: .8rem;
+}
+h6{
+    font-size: .5rem;
+}
+p{
+    font-size: 14px;
+    line-height: 1.6rem;
+}
+
+.d-flex {
+    display: flex;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.align-items-center{
+    align-items: center;
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+.gap{
+    gap: 20px;
+}
+.flex1{
+    flex:1;
+}
+.container {
+    max-width: 1280px;
+    margin: 0 auto;  
+   
+}
+a{
+    text-decoration: none;
+    font-family: var(--font-family-poppin);
+    color: var(--secondary-color);
+}
+.custom-navbar ul a{
+    padding-left: 20px;
+}
+.content{
+    padding:140px;
+    
+}
+.section-wrapper{
+    min-height: 620px;
+}
+
+.section1-p{
+    
+    color:#9F9F9F;
+    translate:40px 20px;
+
+}
+.icon{
+    translate: 10px 20px;
+    background-color:#9FD685;
+    padding:2px 4px;
+    color:white;
+    width:20px;
+    height:24px;
+    border-radius: 50%;
+
+}
+  
+.section2-text{
+    flex-direction: column;
+    gap:10px;
+}    
+.section2 p{
+    font-family: 'Roboto';
+    font-weight:400;
+    font-size: 11px;
+    width:240px;
+    color: #5E5B5B;
+    line-height:1.5rem;
+    
+}
