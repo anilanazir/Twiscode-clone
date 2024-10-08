@@ -34,7 +34,9 @@ h3{
 }
 h4{
     font-size: 1rem;
-    color:var(--text-color);
+    color:var(--primary-color);
+    padding-bottom:3px;
+    
 }
 h5{
     font-size: .8rem;
@@ -59,6 +61,9 @@ p{
 .justify-content-between{
     justify-content: space-between;
 }
+.justify-content-end{
+    justify-content: end;
+}
 .gap{
     gap: 20px;
 }
@@ -81,6 +86,9 @@ a{
 .content{
     padding:140px;
     
+}
+.nav-wrapper{
+    padding:0px 180px;
 }
 .section-wrapper{
     min-height: 620px;
@@ -106,13 +114,62 @@ a{
 .section2-text{
     flex-direction: column;
     gap:10px;
+  
 }    
 .section2 p{
+    
     font-family: 'Roboto';
     font-weight:400;
-    font-size: 11px;
+    font-size: 12px;
     width:240px;
     color: #5E5B5B;
     line-height:1.5rem;
     
+}
+
+.image-container{
+     position:relative;
+    
+    
+}
+.view-details-box {
+    position: absolute;
+    background: white;
+    padding: 20px;
+    top: 26px;
+    right: 0;
+    transform: translateX(-81%);
+    border-radius: 0px 11px 0px 0px; 
+   
+    
+
+}
+.inner-container{
+    padding-top: 100px;
+    padding-left: 120px;
+}
+
+.mobicon::before{
+    font-family: "font awesome 6 free";
+    content:"\f544";
+    margin-left: -30px;
+    padding-right: 10px;
+    font-size: 12px;
+    
+
+}
+.webicon::before{
+    font-family: "font awesome 6 free";
+    content:"\f544";
+    margin-left: -30px;
+    padding-right: 10px;
+    font-size: 12px;
+}
+.uicon::before{
+    font-family: "font awesome 6 free";
+    content:"\f544";
+    margin-left: -30px;
+    padding-right: 10px;
+    font-size: 12px;
+   
 }
