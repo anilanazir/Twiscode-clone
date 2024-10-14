@@ -14,6 +14,9 @@
     --lightText-color: #9F9F9F;
     --font-family-poppin: 'Poppins', sans-serif;
     --flex-1:flex:1;
+    --box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    --white-color:#FFFFFF;
+
 }
 h1{
     font: 600 3rem var(--font-family-poppin);
@@ -22,27 +25,34 @@ h1{
     
 }
 h2{
-    font: 600 1.5rem var(--font-family-poppin);
+    font: 600 2rem var(--font-family-poppin);
     color:var(--primary-color);
+    /* line-height: 1.2rem; */
     
 }
 h3{ 
 
-    font-size: 1.2rem ;
+    font-size: 1.5rem ;
+    font-weight: 600;
+    color: var(--primary-color);
     
 
 }
 h4{
     font-size: 1rem;
+    font-weight: 600;
     color:var(--primary-color);
     padding-bottom:3px;
     
 }
 h5{
     font-size: .8rem;
+    font-weight: 400;
+    color: var(--text-color);
 }
 h6{
-    font-size: .5rem;
+    font-size: 0.5rem;
+    
 }
 p{
     font-size: 14px;
@@ -64,6 +74,12 @@ p{
 .justify-content-end{
     justify-content: end;
 }
+.justify-content-around{
+    justify-content: space-around;
+}
+.flex-direction-coloumn{
+    flex-direction: column;
+}
 .gap{
     gap: 20px;
 }
@@ -80,6 +96,15 @@ a{
     font-family: var(--font-family-poppin);
     color: var(--secondary-color);
 }
+.primary-btn{
+    width: 140px;
+    height: 40px;
+    background-color: #4A4A4A;
+    border:none;
+    color: white;
+    margin-top: 10px;
+
+}
 .custom-navbar ul a{
     padding-left: 20px;
 }
@@ -91,7 +116,8 @@ a{
     padding:0px 180px;
 }
 .section-wrapper{
-    min-height: 620px;
+    
+    min-height: 60vh;
 }
 
 .section1-p{
@@ -173,3 +199,177 @@ a{
     font-size: 12px;
    
 }
+
+
+
+/* How to work start */
+
+.how-to-work > div:nth-child(1){    
+    width: 40%;
+     
+}
+.how-to-work > div:nth-child(2){
+   width: 60%; 
+    
+}
+
+
+
+
+.how-to-work {
+    position: relative; /* Establishes a positioning context for z-index */
+    display: flex; /* Ensure it is a flex container */
+}
+
+.section3-content {
+    position: relative; /* Make this positioned */
+    z-index: 10;  /*Ensure it appears above the background*/
+    width: 508px; /* Width for content */
+    height: 170px; /* Height for content */
+    box-shadow: var(--box-shadow); /* Shadow for effect */
+    background-color: white; /* Ensure background for text */
+    padding: 20px; /* Add some padding */
+    transform: translateX(40%);
+    
+}
+
+.how-to-work-image {
+    background: url('./images/Rectangle 27.png') center / cover no-repeat; 
+    min-height: 47vh; /* Minimum height for image section */
+    z-index: 1; /* Keep it below the content */
+    position: relative; /* Make this positioned */
+    
+    
+}
+
+
+.section-wrapper-how{
+    min-height: 50vh;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.text3{
+   
+    padding:5px 0px 0px 5px;
+   
+}
+
+
+
+/* end */
+/*logo section start*/
+
+
+.image-container img{
+    max-width: 50%;
+   
+}
+.image-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 30px;
+}
+.flex-container{
+    max-width:70%;
+   
+    margin-left: 200px;
+}
+
+ .section5 .section-wrapper{
+    margin-top: 50px ;
+}
+.maskgrp{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+.text5{
+    justify-content: space-around;
+    align-items: center;
+}
+.flex-container2{
+    width:70%;
+    margin-left: 200px;
+}
+.text5 div {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.text5 div h4{
+    color:var(--lightText-color);
+    padding-top: 15px;
+}
+.section6 .section-wrapper{
+     margin-top: 80px ;
+    
+}
+.section6-container{
+    gap:40px;
+}
+.section6-text{
+    padding-top:40px;
+}
+.apply-btn{
+    width:150px;
+    height:50px;
+}
+.company-services ul{
+    flex-direction: column;
+    padding-top: 20px;
+
+}
+.company-services ul a{
+    color:var(--lightText-color);
+}
+.contact p{
+    color: var(--lightText-color);
+
+}
+footer h4{
+    color:var(--primary-color);
+    margin-left: 150px;
+}
+.loc-image{
+    position: relative;
+
+}
+.loc-image img{
+    width:360px;
+    height: 148px;
+}
+.details-box {
+    position: absolute;
+    background: white;
+    width:220px;
+    height:60px;
+    padding: 20px 0px 0px 20px;
+    top: 10px;
+    left: 10px;
+    box-shadow: var(--box-shadow);
+   
+    
+
+}
+
+footer{
+    box-shadow: var(--box-shadow);
+    padding-bottom: 50px;
+    padding-top: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
